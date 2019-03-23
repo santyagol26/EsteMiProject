@@ -13,16 +13,16 @@ function arriba() {
                      </button>
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <div class="navbar-nav ml-auto">
-                     <li class="nav-item ">
+                     <li class="nav-item id="inicio">
                      <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
                      </li>
-                     <li class="nav-item active">
+                     <li class="nav-item" id="perfil">
                      <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(current)</span></a>
                      </li>
-                     <li class="nav-item">
+                     <li class="nav-item id="mostrar">
                      <a class="nav-link" href="mostrar.html">Ver pasajeros<span class="sr-only">(current)</span></a>
                      </li>
-                     <li class="nav-item">
+                     <li class="nav-item id="poner">
                      <a class="nav-link" href="firebase.html">Poner anuncio</a>
                      </li>
                      <li class="nav-item">
@@ -31,7 +31,6 @@ function arriba() {
                     </li>
                     </div>
                     </div>
-                </nav>
-            `
+                </nav> `
 }
 arriba();

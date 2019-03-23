@@ -13,8 +13,8 @@ function registrar() {
             console.log(errorCode, "-->", errorMessage);
             if (errorCode == "auth/email-already-in-use") {
                 console.log("entre al error code");
-                alertinha.innerHTML = `
-                <div class="alert alert-danger " role="alert">
+                alertinha.innerHTML=`
+                <div class="alert alert-danger "role="alert">
                 La dirección de correo ya está siendo usando por otra cuenta.
                 </div>
         `;

@@ -8,6 +8,7 @@ var config = {
 };
 firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(function (user) {
+    console.log(window.location)
     if (user) {
         console.log("Hay sesion iniciada")
     } else {
