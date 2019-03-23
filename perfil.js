@@ -61,7 +61,7 @@ function autocargar(){
         if (user) {
           if(user.photoURL == null){ 
             pruebita.innerHTML=`
-             <img src="imgs/user.png" alt="placeholder+image" id="imgn" width="100px" class="img-fluid rounded-circle">
+            <img src="imgs/user.png" alt="placeholder+image" id="imgn" width="100px" class="img-fluid rounded-circle">
              `;
           }else{ 
             pruebita.innerHTML=`
