@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/jpg" href="imgs/encomiendo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script src="verifica.js"></script>
+    <title>Tu encomienda</title>
+</head>
+
+<body background="imgs/agenda.jpg">
+    <!-- nav bar -->
+    <div class="container-fluid bg-info fixed-top text-center flex responsive">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info container">
+            <a class="navbar-brand" href="#"><img src="imgs/encomiendo.jpg" id="imgn" width="60px"
+                    class="img-fluid rounded-circle"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mostrar.html">Ver pasajeros<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="firebase.html">Poner anuncio</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" onclick="cerrar()">Cerrar
+                            sesión</button>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- nav bar -->
+    <!-- ggg -->
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
+        <a class="navbar-brand ml-5" href="https://www.instagram.com/santyagol26/"> <img src="imgs/descarga.png"
+                alt="placeholder+image" id="imgn" width="65px" class="img-fluid rounded-circle"></a>
+        <a class="navbar-brand" href="https://www.facebook.com/santiagol.huertas"> <img src="imgs/fb111.png"
+                alt="placeholder+image" id="imgn" width="60px" class="img-fluid rounded-circle"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropup</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- fin -->
+
+    <div class="row justify-content-center mt-5 my-5 responsive">
+        <div class="text-center mt-5 col-5 my-5" id="contenid">
+            <div class="container my-1">
+                <h1 class="display-5">Poner anuncio</h1>
+            </div>
+            <input type="text" id="aerolinea" placeholder="Aerolinea" class="form-control my-3">
+            <input type="text" id="ruta" placeholder="Ruta de vuelo" class="form-control my-3">
+            <input type="text" id="celular" placeholder="celular" class="form-control my-3">
+            <input type="date" id="fecha" placeholder="Fecha de vuelo" class="form-control my-3">
+            <input type="time" id="hora" placeholder="Hora de salida" class="form-control my-3">
+            <label for="exampleFormControlSelect1">Kilos que puedes llevar</label>
+            <select class="form-control my-3 mt-n2" id="select1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+            </select>
+            <button class="btn btn-outline-warning btn-lg btn-block active" id="botong" onclick="guardar()">Guardar</button>
+
+            <div class="container" id="conte">
+                <!-- Aqui viene algo -->
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>

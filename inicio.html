@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/jpg" href="imgs/encomiendo.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> <!-- inicio firebase-->
+    <script>
+        var config = {
+            apiKey: "AIzaSyARk-LDpaVRmvXhhyp0QKvD4oV6Ic42UjI",
+            authDomain: "encomienda-70abc.firebaseapp.com",
+            databaseURL: "https://encomienda-70abc.firebaseio.com",
+            projectId: "encomienda-70abc",
+            storageBucket: "encomienda-70abc.appspot.com",
+            messagingSenderId: "913117630799"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <title>Te encomiendo</title>
+</head>
+
+<body background="imgs/agenda.jpg">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form class="form-signin">
+                    <div class="modal-body">
+                        <input type="email" id="correo" placeholder="correo" class="form-control my-3" required
+                            autofocus>
+                        <input type="password" id="passw" placeholder="contraseña" class="form-control my-3" required>
+                    </div>
+                    <div class="alert alert-info " role="alert" id="alerta">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-info" id="boton" onclick="registrar()">Crear cuenta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- fin del Modal -->
+
+    <div class="row justify-content-center mt-5" id="forma">
+        <form class="form-signin text-center mb-4 col-4">
+            <div>
+                <img class="mb-2" src="imgs/encomiendo.jpg" alt="" width="100px">
+                <h1 class="h3 mb-3 font-weight-normal">Te encomiendo</h1>
+                <p>“La imaginación es más importante que el conocimiento”. Albert Einstein.</p>
+            </div>
+            <div class="form-label-group">
+                <input type="email" id="correo1" placeholder="correo" class="form-control my-3" required autofocus>
+            </div>
+            <div class="form-label-group">
+                <input type="password" id="passw1" placeholder="contraseña" class="form-control my-3" required>
+            </div>
+            <div class="checkbox mb-1" id="contenido">
+                <label>
+                    <input type="checkbox" value="remember-me"> Recuerdame
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block mb-2" type="submit" id="boton1"
+                onclick="ingresar()">Entrar</button>
+            <div>
+                <button class="btn btn-lg btn-primary btn-block" data-toggle="modal"
+                    data-target="#exampleModal">Registrarme
+                </button>
+            </div>
+            <label>
+                Ingresa con otros medios
+            </label>
+            <div>
+                <img src="imgs/google.png" width="50px" class="rounded-circle" onclick="googler()">
+                <img src="imgs/facbok.jpg" width="50px" class="rounded-circle" onclick="facer()">
+            </div>
+
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2019-2019 | 8 de Marzo</p>
+        </form>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="code1.js"></script>
+
+<!--  -->
+
+</body>
+
+</html>
