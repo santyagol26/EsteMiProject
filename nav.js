@@ -1,7 +1,5 @@
 function arriba() {
     console.log("helos")
-    var b = document.getElementById('gente');
-    b.innerHTML = "hola gente este es un cambio";
     var a = document.getElementById('arriba');
     a.innerHTML=`
                 <nav class="navbar navbar-expand-lg navbar-dark bg-info container">
@@ -13,17 +11,17 @@ function arriba() {
                      </button>
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <div class="navbar-nav ml-auto">
-                     <li class="nav-item id="inicio">
-                     <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+                     <li class="nav-item id="portal">
+                     <a class="nav-link" href="portal.html">Inicio <span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item" id="perfil">
                      <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(current)</span></a>
                      </li>
-                     <li class="nav-item id="mostrar">
-                     <a class="nav-link" href="mostrar.html">Ver pasajeros<span class="sr-only">(current)</span></a>
+                     <li class="nav-item id="mirar">
+                     <a class="nav-link" href="mirar.html">Ver pasajeros<span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item id="poner">
-                     <a class="nav-link" href="firebase.html">Poner anuncio</a>
+                     <a class="nav-link" href="poner.html">Poner anuncio</a>
                      </li>
                      <li class="nav-item">
                      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" onclick="cerrar()">Cerrar
