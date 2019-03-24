@@ -12,7 +12,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         console.log('sos un crack',user.email) 
     } else {
-        window.location = 'inicio.html'
+        window.location = 'index.html'
     }
 });
 function actualizar(){

@@ -8,12 +8,11 @@ var config = {
 };
 firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(function (user) {
-    console.log(window.location)
     if (user) {
         console.log("Hay sesion iniciada")
     } else {
         console.log("NO hay una sesion iniciada")
-        window.location = 'inicio.html'
+        window.location = 'index.html'
     }
 });
 
