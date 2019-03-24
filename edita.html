@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script> <!-- para usar firestore -->
     <title>perfil</title>
-    
+
     <!-- <style media="screen">
         body {
             display: flex;
@@ -25,9 +25,10 @@
             flex-direction: column;
         }
     </style> -->
-</head>  
+</head>
+
 <body background="imgs/desktop.jpg">
-    
+
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
         <a class="navbar-brand ml-5" href="https://www.instagram.com/santyagol26/"> <img src="imgs/instagram.jpg"
                 alt="placeholder+image" id="imgn" width="60px" class="img-fluid rounded-circle"></a>
@@ -106,7 +107,7 @@
                         <td>${doc.data().fecha}</td>
                         <td>${doc.data().hora}</td>
                         <td>${doc.data().kg}Kgs.</td>
-                        <td><button class="btn btn-warning" onclick="eliminarm('${doc.id}'})">Eliminar</button></td>
+                        <td><button class="btn btn-warning" onclick="eliminarm('${doc.id}')">Eliminar</button></td>
                       </tr>
                     `;
                 }
@@ -114,11 +115,11 @@
         });
         function eliminarm(id) {
             console.log(id)
-            db.collection("users").doc(id).delete().then(function () {
+             db.collection("users").doc(id).delete().then(function () {
                 console.log("Document successfully deleted!");
             }).catch(function (error) {
-                console.error("Error removing document: ", error);
-            });
+                 console.error("Error removing document: ", error);
+             });
         }
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -131,7 +132,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
+
 </html>

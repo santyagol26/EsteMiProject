@@ -1,5 +1,4 @@
 function arriba() {
-    console.log("helos")
     var a = document.getElementById('arriba');
     a.innerHTML=`
                 <nav class="navbar navbar-expand-lg navbar-dark bg-info container">
