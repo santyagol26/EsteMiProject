@@ -14,8 +14,8 @@ function arriba() {
                      <li class="nav-item id="portal">
                      <a class="nav-link" href="portal.html">Inicio <span class="sr-only">(current)</span></a>
                      </li>
-                     <li class="nav-item" id="perfil">
-                     <a class="nav-link" href="perfil.html">Perfil <span class="sr-only">(current)</span></a>
+                     <li class="nav-item" id="perfi">
+                     <a class="nav-link" href="perfi.html">Perfil <span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item id="mirar">
                      <a class="nav-link" href="mirar.html">Ver pasajeros<span class="sr-only">(current)</span></a>
