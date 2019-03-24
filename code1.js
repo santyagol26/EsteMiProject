@@ -112,7 +112,7 @@ function aparece(user) {
         console.log("estoy en aparece")
         firebase.auth().onAuthStateChanged(function (user) {
             if (user) {
-                window.location = 'mostrar.html'
+                window.location = 'mirar.html'
             } else {
                 console.log("NO hay una sesion iniciada")
             }
