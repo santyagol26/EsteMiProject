@@ -99,7 +99,7 @@ function aparece(user) {
     var contenido = document.getElementById('contenido');
     console.log("esta verificado user")
     if (user.photoURL) {
-        window.location = 'mostrar.html'
+        window.location = 'mirar.html'
     }
 
     if (user.emailVerified) {
