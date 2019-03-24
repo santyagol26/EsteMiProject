@@ -12,16 +12,16 @@ function arriba() {
                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <div class="navbar-nav ml-auto">
                      <li class="nav-item" id="portal">
-                     <a class="nav-link" href="portal.html">Inicio <span class="sr-only">(current)</span></a>
+                     <a class="nav-link" href="portal.html" name="Portal">Inicio <span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item" id="perfi">
-                     <a class="nav-link" href="perfi.html">Perfil <span class="sr-only">(current)</span></a>
+                     <a class="nav-link" href="perfi.html" name="Perfil">Perfil <span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item" id="mirar">
-                     <a class="nav-link" href="mirar.html">Ver pasajeros<span class="sr-only">(current)</span></a>
+                     <a class="nav-link" href="mirar.html" name="ver pasajeros">Ver pasajeros<span class="sr-only">(current)</span></a>
                      </li>
                      <li class="nav-item" id="poner">
-                     <a class="nav-link" href="poner.html">Poner anuncio</a>
+                     <a class="nav-link" href="poner.html" name="Poner anuncios">Poner anuncio</a>
                      </li>
                      <li class="nav-item">
                      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" onclick="cerrar()">Cerrar
