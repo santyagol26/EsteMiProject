@@ -4,6 +4,7 @@ function arriba() {
                 <nav class="navbar navbar-expand-lg navbar-dark bg-info container">
                      <a class="navbar-brand" href="#"><img src="imgs/encomiendo.jpg" alt="placeholder+image" id="imgn"
                      width="60px" class="img-fluid rounded-circle"></a>
+                     <p>Nombre</p>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
