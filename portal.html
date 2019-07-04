@@ -9,6 +9,7 @@
         crossorigin="anonymous">
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="hora.js"></script>
     <style media="screen">
             body {
                 display: flex;
@@ -30,6 +31,13 @@
         <script src="nav.js"></script>
         <div class="banner">
 
+        </div>
+        <div class="container" id="horita">
+         <script> mostrarHora();
+         setTimeOut('mostrarHora()',1000);
+         var t=setTimeout("mostrarhora()",500,'Hola Mundo');
+         onLoad="mostrarHora()"
+         </script>
         </div>
         <div class="slider">
             <ul>
