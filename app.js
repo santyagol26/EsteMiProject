@@ -19,8 +19,9 @@ if (subst=="edita" || subst=="perfi"){
     });
 }
  
- if (subst=="portal"){
+ if (subst=="porta"){
     $(document).ready(function () {
         $('#portal').addClass('active');
     });
+    
 }
