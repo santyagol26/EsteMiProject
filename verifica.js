@@ -16,3 +16,13 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
 });
 
+function cerrar() {
+    firebase.auth().signOut()
+        .then(function () {
+            console.log('saliendo... putooo');
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+}
+

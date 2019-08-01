@@ -69,16 +69,3 @@ function guardar() {
         `;
     }
 }
-function cerrar() {
-    $(document).ready(function () {
-        console.log("mirame estoy en cerrar");
-    });
-    firebase.auth().signOut()
-        .then(function () {
-            console.log('saliendo...');
-
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-}
